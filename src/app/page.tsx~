@@ -217,7 +217,7 @@ export default function Home() {
                 min="0"
                 max="100"
                 value={percentages[state as keyof typeof percentages]}
-                onChange={(e) => handlePercentageChange(state as keyof typeof percentages, parseInt(e.target.value))}
+                onChange={(e) => handlePercentageChange(state, parseInt(e.target.value))}
                 className="cursor-pointer"
               />
               <span className="text-xs text-gray-300">{percentages[state as keyof typeof percentages]}%</span>
